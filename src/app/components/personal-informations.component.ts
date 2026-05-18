@@ -1,6 +1,6 @@
 import {Component, signal, WritableSignal} from '@angular/core';
 import {PersonalInformation} from '../form_models/personal-information.model';
-import {form, FormField} from '@angular/forms/signals';
+import {FieldTree, form} from '@angular/forms/signals';
 
 @Component(
   {
@@ -90,9 +90,9 @@ import {form, FormField} from '@angular/forms/signals';
 )
 export class PersonalInformationComponent {
 
-    public personalInformationForm;
+    public personalInformationForm: FieldTree<PersonalInformation>;
 
-    private personalInformationModel: WritableSignal<PersonalInformation>;
+    private readonly personalInformationModel: WritableSignal<PersonalInformation>;
 
 
     constructor() {
