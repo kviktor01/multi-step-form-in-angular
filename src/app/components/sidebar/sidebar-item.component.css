@@ -1,0 +1,32 @@
+
+.step{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.step__title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.step__subtitle {
+    color: hsl(228, 100%, 84%);
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.step__number {
+    font-size: 1.1rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    padding: 0.6rem 0.9rem;
+    color: #fff;
+    border: 1px solid #fff;
+}
