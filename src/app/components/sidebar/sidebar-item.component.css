@@ -4,6 +4,8 @@
     align-content: center;
     align-items: center;
     margin: 1rem 0;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .step__title {
@@ -29,4 +31,9 @@
     padding: 0.6rem 0.9rem;
     color: #fff;
     border: 1px solid #fff;
+}
+
+.step.active .step__number {
+    background-color: hsl(228, 100%, 84%);
+    color: hsl(213, 96%, 18%);
 }

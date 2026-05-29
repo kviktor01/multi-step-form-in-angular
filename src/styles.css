@@ -21,3 +21,32 @@ app-root {
     font-size: 16px;
     box-sizing: border-box;
 }
+
+.form-buttons-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.form-button {
+    display: inline-block;
+    background: hsl(213, 96%, 18%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    background: hsl(213, 96%, 30%)
+}
+
+.back-button {
+    display: inline-block;
+    color: hsl(231, 11%, 63%);
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+}

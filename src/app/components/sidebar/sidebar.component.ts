@@ -13,20 +13,24 @@ import {SidebarItemComponent} from './sidebar-item.component';
       <sidebar-item
         title="Your info"
         [stepNumber]="1"
+        path="/"
       />
 
       <sidebar-item
         title="Select plan"
+        path="/select-plan"
         [stepNumber]="2"
       />
 
       <sidebar-item
         title="Add ons"
+        path="/add-ons"
         [stepNumber]="3"
       />
 
       <sidebar-item
         title="Summary"
+        path="/summary"
         [stepNumber]="4"
       />
     </div>

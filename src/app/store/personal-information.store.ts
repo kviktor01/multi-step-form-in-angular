@@ -22,10 +22,10 @@ export const getInitialState = (): PersonalInformationState => {
 };
 
 export const PersonalInformationStore = signalStore(
-  // Biztosítjuk a kezdeti állapotot
+  { providedIn: 'root' },
+
   withState(getInitialState()),
 
-  // Definiáljuk a metódusokat, amikkel módosítani lehet az állapotot
   withMethods((store) => ({
     updatePersonalInformation(name: string, email: string, phoneNumber: string): void {
       const newState = { name, email, phoneNumber };

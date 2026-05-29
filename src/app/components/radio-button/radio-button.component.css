@@ -1,0 +1,42 @@
+
+.radio-button__card {
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(229, 24%, 87%);
+    width: 9rem;
+}
+
+.radio-button__card img {
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.radio-button-value {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+
+.radio-button-price {
+    display: block;
+    color: hsl(231, 11%, 63%);
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+}
+
+.radio-button-discount {
+    display: block;
+    color: hsl(213, 96%, 18%);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .radio-button__card {
+    border: 1px solid hsl(229, 64%, 46%);
+}
